@@ -6,4 +6,4 @@ before-install:
   - docker build -t naveed019/docker-react -f Doclerfile.dev .
 
 script:
-  - docker run -e CI=true naveed019/docker-react npm run test
+  - docker run naveed019/docker-react npm run test -- --coverage
